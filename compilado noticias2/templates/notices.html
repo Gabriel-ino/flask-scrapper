@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Noticias</title>
+</head>
+<body>
+
+    <div>
+        <h2 style="background-color: #2fd0e9; border:solid 2px ##2fd0e9; width:100%; height:100%;">Noticias:</h2>
+    </div>
+    <div>
+        <a href="/" style="color: #f3f4f5; font-size: 1.8vw" >home</a>
+        <a href="/data" style="color: #f3f4f5 font-size: 2.1vw">registrar</a>
+    </div>
+
+
+{% for notice in notices %}
+    <div style="background-color: white; border:solid 2px #8f99a2; ">
+    <div><b>{{notice[1]}}</b></div>
+    <div>{{notice[2]}}</div>
+        <div>{{notice[3]}}</div>
+    </div>
+    </br>
+{% endfor %}
+
+</body>
+</html>
